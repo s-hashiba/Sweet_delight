@@ -258,6 +258,22 @@ img {
         gap: 40px;
     }
 
+    .drawer {
+        position: fixed;
+        top: 65px;
+        background-color: rgba(14, 14, 14, 0.5);
+        color: #fff;
+        overflow-y: auto;
+        z-index: 10;
+        display: none;
+    }
+
+    .drawer a{
+        display: block;
+        top: 20px;
+        padding: 10px 10px;
+    }
+
     .inner {
         max-width: 1080px;
         padding: 0 40px;
