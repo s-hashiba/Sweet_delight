@@ -361,4 +361,13 @@ img {
     .footer-copylight {
         font-size: 13px;
     }
+
+    #page-top a {
+        background-color: #1cb4d3;
+        bottom: 0;
+        color: #fff;
+        padding: 20px;
+        position: fixed;
+        right: 0;
+    }
 }
