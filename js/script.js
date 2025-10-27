@@ -23,4 +23,17 @@ $(function () {
     );
     return false;
   });
+
+  //モーダルで画像の拡大表示
+jQuery(".menu-img a").click(function(){//画像のdivとaタグがクリックされたら
+    var imgSrc = jQuery(this).children().prop("src");//子要素のsrc属性を取得
+    jQuery(".menu-bigimg").prop("src",imgSrc);//拡大htmlのsrc属性に上書き
+    jQuery(".menu-modal").fadeIn();//フェードイン表示
+    jQuery("body").css("overflow", "hidden");//画面下をスクロールさせない
+    return false;//aタグの無効化
+});
+jQuery(window).click(function(){//画面のどこかがクリックされたら
+    jQuery(".menu-modal").fadeOut();//フェードアウト表示
+    jQuery("body").css("overflow","auto");//スクロールロック解除
+});
 });
